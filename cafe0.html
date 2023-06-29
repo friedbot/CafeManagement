@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/SANJAY/Downloads/cafe0%20(8).html -->
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen">
+  body
+  {
+    background-color: #F0CAA3;
+    overflow:x;
+  }
+  .pl{
+    display:grid;
+    grid-template-columns:40px 40px 40px;
+    grid-column-gap: 60px;
+    padding-left: 130px;
+  }
+  .box{
+    border-radius: 25px;
+   background: white;
+   padding: 20px;
+   width: 500px;
+   height: 550px;
+  }
+  .box:hover{
+
+  width: 550px;
+  height: 650px;
+  box-shadow:2px 2px 4px #000001;
+  }
+  .opts{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column-gap: 500px;
+    padding-left: 80px;
+    text-align: center;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     background-color:#F0CAA3;
+  }
+  .all{
+    background-color:tomato ;
+    text-align:left;
+    padding-left: 200px;
+
+  }
+  .img-mod{
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+  }
+  .final{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-column-gap: 70px;
+    padding-top: 100px;
+    padding-left: 700px;
+    background-color: tomato;
+    padding-bottom: 50px;
+
+  }
+  a{
+    color: white;
+     text-decoration: none;
+
+
+  }
+  a:hover{
+    color: white;
+     text-decoration: underline;
+  }
+  .check{
+ background-color: tomato;
+    border-radius: 25px;
+    height: 100px;
+    width: 500px;
+    border-width: 0px;
+    font-size: 24px;
+  }
+  .finale{
+    padding-left: 620px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+  #more
+  {
+  border:none;
+  font-family:Verdana, Geneva, sans-serif;
+  cursor:pointer;
+}
+</style>
+
+
+    <title>Tea Villa Cafe</title>
+  </head>
+  <body >
+    <header>
+
+    </header>
+    <main>
+      <h2 class="all">Coffee</h2>
+
+      <div class="opts">
+        <div class="box">
+          <h3>Black Coffee</h3>
+          <img src="./cafe0_files/Black-Coffee-2-1-750x375.jpg" alt="Black Coffe " class="img-mod">
+          <h4>$4</h4>
+
+          <div class="pl">
+              <button type="button" name="button" onclick="minusc1()">-</button>
+                <p id="messagec1">00</p>
+              <button type="text" name="button" onclick="plusc1()">+</button>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Cappuccino</h3>
+          <img src="./cafe0_files/how-to-make-cappuccino-005.jpg" alt="" class="img-mod">
+          <h4>$7</h4>
+
+          <div class="pl">
+              <button type="button" name="button" onclick="minusc2()">-</button>
+                <p id="messagec2">00</p>
+              <button type="text" name="button" onclick="plusc2()">+</button>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Frappé coffee</h3>
+          <img src="./cafe0_files/Frappe.jpg" alt="" class="img-mod">
+          <h4>$9</h4>
+
+          <div class="pl">
+              <button type="button" name="button" onclick="minusc3()">-</button>
+                <p id="messagec3">00</p>
+              <button type="text" name="button" onclick="plusc3()">+</button>
+          </div>
+        </div>
+      </div>
+      <h2 class="all">Cookies</h2>
+      <div class="opts">
+        <div class="box">
+          <h3>Chocolate Cookies</h3>
+<img src="./cafe0_files/62298.jpg" alt="" class="img-mod">
+<h4>$4</h4>
+
+<div class="pl">
+    <button type="button" name="button" onclick="minusco1()">-</button>
+      <p id="messageco1">00</p>
+    <button type="text" name="button" onclick="plusco1()">+</button>
+</div>
+        </div>
+        <div class="box">
+          <h3>Triple Chocolate Cookies</h3>
+<img src="./cafe0_files/Triple-Chocolate-Chip-Cookies.jpg" alt="" class="img-mod">
+<h4>$5</h4>
+
+<div class="pl">
+    <button type="button" name="button" onclick="minusco2()">-</button>
+      <p id="messageco2">00</p>
+    <button type="text" name="button" onclick="plusco2()">+</button>
+</div>
+        </div>
+        <div class="box">
+<h3>Dark Chocolate M&amp;M Cookies</h3>
+<img src="./cafe0_files/Dark-Chocolate-MM-Cookies-112-710x1024-480x480.jpg" alt="" class="img-mod">
+<h4>$7</h4>
+
+<div class="pl">
+    <button type="button" name="button" onclick="minusco3()">-</button>
+      <p id="messageco3">00</p>
+    <button type="text" name="button" onclick="plusco3()">+</button>
+</div>
+        </div>
+      </div>
+      <h2 class="all">Snacks</h2>
+      <div class="opts">
+        <div class="box">
+          <h3>Veg Sandwich</h3>
+          <img src="./cafe0_files/60057435.cms" alt="" class="img-mod">
+          <h4>$10</h4>
+
+          <div class="pl">
+              <button type="button" name="button" onclick="minuss1()">-</button>
+                <p id="messages1">00</p>
+              <button type="text" name="button" onclick="pluss1()">+</button>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Chicken Pizza</h3>
+          <img src="./cafe0_files/meat-pizza_625x350_41424681507.jpg" alt="" class="img-mod">
+          <h4>$12</h4>
+
+          <div class="pl">
+              <button type="button" name="button" onclick="minuss2()">-</button>
+                <p id="messages2">00</p>
+              <button type="text" name="button" onclick="pluss2()">+</button>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Chicken Salad Crossiant</h3>
+<img src="./cafe0_files/chicken-salad-sandwich.jpg" alt="" class="img-mod">
+<h4>$11</h4>
+
+<div class="pl">
+    <button type="button" name="button" onclick="minuss3()">-</button>
+      <p id="messages3">00</p>
+    <button type="text" name="button" onclick="pluss3()">+</button>
+</div>
+        </div>
+        <div class="finale">
+            <button type="button" name="button" class="check" id="more" onclick="exit()">Check-Out</button>
+        </div>
+      </div>
+
+
+    </main>
+    <footer>
+      <div class="final">
+        <a href="file:///C:/Users/SANJAY/Downloads/cafe0%20(8).html#">About Us</a>
+        <a href="file:///C:/Users/SANJAY/Downloads/cafe0%20(8).html#">Legal Notice</a>
+        <a href="file:///C:/Users/SANJAY/Downloads/cafe0%20(8).html#">Privacy Policy</a>
+      </div>
+    </footer>
+
+
+<script type="text/javascript">
+  var c1=0,c2=0,c3=0,co1=0,co2=0,co3=0,s1=0,s2=0,s3=0,tc=0;
+  let messagec1=document.querySelector("#messagec1");
+  let messagec2=document.querySelector("#messagec2");
+  let messagec3=document.querySelector("#messagec3");
+  let messageco1=document.querySelector("#messageco1");
+  let messageco2=document.querySelector("#messageco2");
+  let messageco3=document.querySelector("#messageco3");
+  let messages1=document.querySelector("#messages1");
+  let messages2=document.querySelector("#messages2");
+  let messages3=document.querySelector("#messages3");
+  function minusc1(){
+    if (c1>0)
+    {c1--;
+      messagec1.innerHTML="0"+c1;}
+  }
+  function plusc1(){
+    if (c1<9)
+      {c1++;
+    messagec1.innerHTML="0"+c1;}
+  }
+  ///////////////////////////////////////////////////////////////////////
+  function minusc2(){
+    if (c2>0)
+    {c2--;
+      messagec2.innerHTML="0"+c2;}
+  }
+  function plusc2(){
+    if (c2<9)
+      {c2++;
+    messagec2.innerHTML="0"+c2;}
+  }
+  ///////////////////////////////////////////////////////////
+  function minusc3(){
+    if (c3>0)
+    {c3--;
+      messagec3.innerHTML="0"+c3;}
+  }
+  function plusc3(){
+    if (c3<9)
+      {c3++;
+    messagec3.innerHTML="0"+c3;}
+  }
+  //////////////////////////////////////////////////.////////////////////////////////////////////////
+  function minusco1(){
+    if (co1>0)
+    {co1--;
+      messageco1.innerHTML="0"+co1;}
+  }
+  function plusco1(){
+    if (co1<9)
+      {co1++;
+    messageco1.innerHTML="0"+co1;}
+  }
+  ///////////////////////////////////////////////////////////////////////
+  function minusco2(){
+    if (co2>0)
+    {co2--;
+      messageco2.innerHTML="0"+co2;}
+  }
+  function plusco2(){
+    if (co2<9)
+      {co2++;
+    messageco2.innerHTML="0"+co2;}
+  }
+  ///////////////////////////////////////////////////////////
+  function minusco3(){
+    if (co3>0)
+    {co3--;
+      messageco3.innerHTML="0"+co3;}
+  }
+  function plusco3(){
+    if (co3<9)
+      {co3++;
+    messageco3.innerHTML="0"+co3;}
+  }
+  //////////////////////////////////////////////////.////////////////////////////////////////////////
+  function minuss1(){
+    if (s1>0)
+    {s1--;
+      messages1.innerHTML="0"+s1;}
+  }
+  function pluss1(){
+    if (s1<9)
+      {s1++;
+    messages1.innerHTML="0"+s1;}
+  }
+  ///////////////////////////////////////////////////////////////////////
+  function minuss2(){
+    if (s2>0)
+    {s2--;
+      messages2.innerHTML="0"+s2;}
+  }
+  function pluss2(){
+    if (s2<9)
+      {s2++;
+    messages2.innerHTML="0"+s2;}
+  }
+  ///////////////////////////////////////////////////////////
+  function minuss3(){
+    if (s3>0)
+    {s3--;
+      messages3.innerHTML="0"+s3;}
+  }
+  function pluss3(){
+    if (s3<9)
+      {s3++;
+    messages3.innerHTML="0"+s3;}
+  }
+  //////////////////////////////////////////////////.////////////////////////////////////////////////
+  function exit(){
+    localStorage.setItem("Black Coffee",c1);
+    localStorage.setItem("Cappuccino",c2);
+    localStorage.setItem("Frappé coffee",c3);
+    localStorage.setItem("Chocolate Cookies",co1);
+    localStorage.setItem("Triple Chocolate Cookies",co2);
+    localStorage.setItem("Dark Chocolate M&M Cookies",co3);
+    localStorage.setItem("Veg Sandwich",s1);
+    localStorage.setItem("Chicken Pizza",s2);
+    localStorage.setItem("Chicken Salad Crossiant",s3);
+    console.log(localStorage);
+    window.location.href = "bill.html";
+
+  }
+</script>
+</body></html>

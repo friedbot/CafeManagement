@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+
+  .a{
+
+    display:grid;
+      grid-template-columns: 100px 100px;
+      padding-left:900px;
+      padding-top:30px;
+      padding-column-gap:30px;
+      font-size: 24px;
+  }
+  table
+  {
+    font-size: 30px;
+    text-align: center;
+    width: 1000px;
+
+  }
+  .tab{
+    padding-left: 500px;
+    padding-top: 100px;
+  }
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body class="r3">
+    <header>
+      <h1>Thank you for placing your Order!</h1>
+      <div class="a">
+        <h3>Order No.</h3>
+        <h1 id="message">""</h1>
+      </div>
+    </header>
+    <main>
+<div class="tab">
+  <table border="2" id="myTable" >
+    <thead>
+      <td><u><b>Sr No.</b></u></td>
+      <td><u><b>Item Name</b></u></td>
+      <td><u><b>Qty.</b></u></td>
+      <td><u><b>Amt.</b></u></td>
+    </thead>
+    <tbody id="bill">
+
+    </tbody>
+  </table>
+
+</div>
+<p class="r5"> YOU CAN PAY THROUGH UPI ALSO</p>
+<div class="imgcl">
+
+    <img class="myim" src="images/qrcode.jpg" alt="QR CODE FOR PAYMENT">
+</div>
+<hr class="r6">
+<p class="r5"> HOPE YOU VISIT AGAIN💖😁</p>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
+
+<script type="text/javascript">
+  let r=document.getElementById("message")
+  r.innerHTML="#"+Math.floor(Math.random() * 1001);
+
+  var arr=[12,11,4,7,10,7,5,4,9]
+  var sum=0
+  var k=1
+for (var i=0;i<localStorage.length;i++){
+  var key=localStorage.key(i)
+  if (localStorage[key]!=0){
+    console.log(arr[i]);
+      var tbodyRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+      var newRow = tbodyRef.insertRow();
+      var c1=newRow.insertCell();
+      var c2=newRow.insertCell();
+      var c3=newRow.insertCell();
+      var c4=newRow.insertCell();
+      var C1=document.createTextNode(k);
+      var C2=document.createTextNode(key);
+      var C3=document.createTextNode(localStorage[key]);
+      var C4=document.createTextNode("$"+arr[i]*localStorage[key]);
+      c1.appendChild(C1);
+      c2.appendChild(C2);
+      c3.appendChild(C3);
+      c4.appendChild(C4);
+      sum+=arr[i]*localStorage[key]
+      k++;
+  }
+}
+var tbodyRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+var newRow = tbodyRef.insertRow();
+var c1=newRow.insertCell();
+var c2=newRow.insertCell();
+var c3=newRow.insertCell();
+var c4=newRow.insertCell();
+var C1=document.createTextNode("");
+var C2=document.createTextNode("Total Amount:");
+var C3=document.createTextNode("");
+var C4=document.createTextNode("$"+sum);
+c1.appendChild(C1);
+c2.appendChild(C2);
+c3.appendChild(C3);
+c4.appendChild(C4);
+console.log(localStorage);
+</script>
